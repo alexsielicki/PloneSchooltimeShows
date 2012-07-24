@@ -5,7 +5,7 @@
     id="PloneSchooltimeShows-Hide-Types-From-Navigation" 
     handler="Products.PloneSchooltimeShows.setuphandlers.setupHideMetaTypesFromNavigations"
     title="Hide types from navigation for PloneSchooltimeShows"
-    version="2012-07-23T21:21:48.893009">
+    version="2012-07-23T22:00:31.830159">
    <dependency step="PloneSchooltimeShows-QI-dependencies"/>
    Hides types from the navigation tree for PloneSchooltimeShows
  </import-step>
@@ -17,7 +17,7 @@
     id="PloneSchooltimeShows-Update-RoleMappings" 
     handler="Products.PloneSchooltimeShows.setuphandlers.updateRoleMappings"
     title="Update Workflow role mappings for PloneSchooltimeShows"
-    version="2012-07-23T21:21:48.893009">
+    version="2012-07-23T22:00:31.830159">
    <dependency step="PloneSchooltimeShows-QI-dependencies"/>
    updates the workflow role mappings for PloneSchooltimeShows
  </import-step>
@@ -26,7 +26,7 @@
     id="PloneSchooltimeShows-postInstall" 
     handler="Products.PloneSchooltimeShows.setuphandlers.postInstall"
     title="manual coded post-install for PloneSchooltimeShows"
-    version="2012-07-23T21:21:48.893009">
+    version="2012-07-23T22:00:31.830159">
    <dependency step="PloneSchooltimeShows-QI-dependencies"/>
    manual coded post-install for PloneSchooltimeShows
  </import-step>

@@ -152,35 +152,36 @@ class Show(ATFolder, ATNewsItem):
         if not individualTixStartDate:
             individualTixStartDate = self.aq_inner.aq_parent.getIndividualTixStartDate()
         return individualTixStartDate
-    
+
     # Manually created methods
-    
-        security.declareProtected(View, 'tag')
-        def tag(self, **kwargs):
-            """Generate image tag using the api of the ImageField
-            """
-            if 'title' not in kwargs:
-                kwargs['title'] = self.getImageCaption()
-            return self.getField('image').tag(self, **kwargs)
-    
-        def __bobo_traverse__(self, REQUEST, name):
-            """Transparent access to image scales
-            """
-            if name.startswith('image'):
-                field = self.getField('image')
-                image = None
-                if name == 'image':
-                    image = field.getScale(self)
-                else:
-                    scalename = name[len('image_'):]
-                    if scalename in field.getAvailableSizes(self):
-                        image = field.getScale(self, scale=scalename)
-                if image is not None and not isinstance(image, basestring):
-                    # image might be None or '' for empty images
-                    return image
-    
-            return ATDocumentBase.__bobo_traverse__(self, REQUEST, name)
-    
+
+    security.declareProtected(View, 'tag')
+    def tag(self, **kwargs):
+        """Generate image tag using the api of the ImageField
+        """
+        if 'title' not in kwargs:
+            kwargs['title'] = self.getImageCaption()
+        return self.getField('image').tag(self, **kwargs)
+
+    def __bobo_traverse__(self, REQUEST, name):
+        """Transparent access to image scales
+        """
+        if name.startswith('image'):
+            field = self.getField('image')
+            image = None
+            if name == 'image':
+                image = field.getScale(self)
+            else:
+                scalename = name[len('image_'):]
+                if scalename in field.getAvailableSizes(self):
+                    image = field.getScale(self, scale=scalename)
+            if image is not None and not isinstance(image, basestring):
+                # image might be None or '' for empty images
+                return image
+
+        return ATDocumentBase.__bobo_traverse__(self, REQUEST, name)
+
+
 
 registerType(Show, PROJECTNAME)
 # end of class Show

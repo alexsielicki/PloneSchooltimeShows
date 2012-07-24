@@ -5,6 +5,13 @@
            i18n_domain="PloneSchooltimeShows">
 
   <!-- ##code-section configure.zcml.header -->
+  
+      <five:implements
+    class=".content.Performance.Performance"
+    interface=
+        "Products.CMFPlone.interfaces.breadcrumbs.IHideFromBreadcrumbs"
+    />
+    
   <!-- ##/code-section configure.zcml.header -->
 
   <i18n:registerTranslations directory="locales" />
@@ -14,13 +21,6 @@
 
 
   <!-- ##code-section configure.zcml -->
-
-    <five:implements
-    class=".content.Performance.Performance"
-    interface=
-        "Products.CMFPlone.interfaces.breadcrumbs.IHideFromBreadcrumbs"
-    />
-
   <!-- ##/code-section configure.zcml -->
 
 </configure>

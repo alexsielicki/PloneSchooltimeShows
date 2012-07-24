@@ -97,6 +97,7 @@ class Performance(ATEvent):
 
     # Methods
 
+
 registerType(Performance, PROJECTNAME)
 # end of class Performance
 

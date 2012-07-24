@@ -352,6 +352,7 @@ class Season(ATFolder, ATDocument):
                 active = True
         return active
 
+
 registerType(Season, PROJECTNAME)
 # end of class Season
 
