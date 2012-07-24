@@ -1,0 +1,220 @@
+# archgenxml generated POT File
+# unknown <unknown>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: PloneSchooltimeShows\n"
+"POT-Creation-Date: Mon Jul 23 21:21:47 2012\n"
+"PO-Revision-Date: Mon Jul 23 21:21:47 2012\n"
+"Last-Translator: unknown <unknown>\n"
+"Language-Team: unknown <unknown>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: PloneSchooltimeShows\n"
+
+#. Default: "Date when donors can no longer renew their subscription"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_donorRenewalEndDate"
+msgstr ""
+
+#. Default: "Link image for donor renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_donorRenewalImage"
+msgstr ""
+
+#. Default: "Link address for donor renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_donorRenewalLink"
+msgstr ""
+
+#. Default: "Link text for donor renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_donorRenewalLinkText"
+msgstr ""
+
+#. Default: "Date when donors can start renewing their subscription"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_donorRenewalStartDate"
+msgstr ""
+
+#. Default: "Link image for individual tickets"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_individualTixImage"
+msgstr ""
+
+#. Default: "Link address for individual tickets"
+#: content/Show.py
+msgid "PloneSchooltimeShows_help_individualTixLink"
+msgstr ""
+
+#. Default: "Link text for individual ticket purchases"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_individualTixLinkText"
+msgstr ""
+
+#. Default: "Date when visitors can start buying individual tickets.  You can override this general date by specifying an Individual Ticket Purchase Start Date for each show."
+#: content/Season.py
+#: content/Show.py
+msgid "PloneSchooltimeShows_help_individualTixStartDate"
+msgstr ""
+
+#. Default: "Date when new subscribers can no longer purchase season tickets"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonNewEndDate"
+msgstr ""
+
+#. Default: "Link image for new subscriptions"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonNewImage"
+msgstr ""
+
+#. Default: "Link address for new subscriptions"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonNewLink"
+msgstr ""
+
+#. Default: "Link text for new subscriptions"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonNewLinkText"
+msgstr ""
+
+#. Default: "Date when new subscribers can start purchasing season tickets"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonNewStartDate"
+msgstr ""
+
+#. Default: "Date when subscribers can no longer renew their season tickets"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonRenewalEndDate"
+msgstr ""
+
+#. Default: "Link image for subscription renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonRenewalImage"
+msgstr ""
+
+#. Default: "Link address for subscription renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonRenewalLink"
+msgstr ""
+
+#. Default: "Link text for subscription renewals"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonRenewalLinkText"
+msgstr ""
+
+#. Default: "Date when subscribers can start renewing their season tickets"
+#: content/Season.py
+msgid "PloneSchooltimeShows_help_seasonRenewalStartDate"
+msgstr ""
+
+#. Default: "Check this to indicate that this performance is sold out."
+#: content/Performance.py
+msgid "PloneSchooltimeShows_help_soldOut"
+msgstr ""
+
+#. Default: "Donor Renewal End Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_donorRenewalEndDate"
+msgstr ""
+
+#. Default: "Donor Renewal Image"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_donorRenewalImage"
+msgstr ""
+
+#. Default: "Donor Renewal Link URL"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_donorRenewalLink"
+msgstr ""
+
+#. Default: "Donor Renewal Link Text"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_donorRenewalLinkText"
+msgstr ""
+
+#. Default: "Donor Renewal Start Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_donorRenewalStartDate"
+msgstr ""
+
+#. Default: "Individual Ticket Image"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_individualTixImage"
+msgstr ""
+
+#. Default: "Individual Ticket Link URL"
+#: content/Show.py
+msgid "PloneSchooltimeShows_label_individualTixLink"
+msgstr ""
+
+#. Default: "Individual Ticket Link Text"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_individualTixLinkText"
+msgstr ""
+
+#. Default: "Individual Ticket Purchase Start Date"
+#: content/Season.py
+#: content/Show.py
+msgid "PloneSchooltimeShows_label_individualTixStartDate"
+msgstr ""
+
+#. Default: "New Subscription End Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonNewEndDate"
+msgstr ""
+
+#. Default: "New Subscription Image"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonNewImage"
+msgstr ""
+
+#. Default: "New Subscription Link URL"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonNewLink"
+msgstr ""
+
+#. Default: "New Subscription Link Text"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonNewLinkText"
+msgstr ""
+
+#. Default: "New Subscription Start Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonNewStartDate"
+msgstr ""
+
+#. Default: "Subscription Renewal End Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonRenewalEndDate"
+msgstr ""
+
+#. Default: "Subscription Renewal Image"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonRenewalImage"
+msgstr ""
+
+#. Default: "Subscription Renewal Link URL"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonRenewalLink"
+msgstr ""
+
+#. Default: "Subscription Renewal Link Text"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonRenewalLinkText"
+msgstr ""
+
+#. Default: "Subscription Renewal Start Date"
+#: content/Season.py
+msgid "PloneSchooltimeShows_label_seasonRenewalStartDate"
+msgstr ""
+
+#. Default: "Sold Out"
+#: content/Performance.py
+msgid "PloneSchooltimeShows_label_soldOut"
+msgstr ""
+

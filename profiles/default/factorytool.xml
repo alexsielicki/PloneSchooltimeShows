@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_factory" meta_type="Plone Factory Tool">
+ <factorytypes>
+  <type portal_type="Season"/>
+  <type portal_type="Show"/>
+  <type portal_type="Performance"/>
+  <type portal_type="Now_Playing_Page"/>
+ </factorytypes>
+</object>

@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<body>
+<div metal:define-macro="relatedItems"
+    class="relatedItems"
+    tal:define="getInfoFor python:wtool.getInfoFor;">
+    <tal:allowed condition="isViewTemplate">
+        <tal:relatedItems tal:define="related python:here.portal_type=='Performance' and here.aq_parent.computeRelatedItems() or here.computeRelatedItems();
+                                        ">
+            <tal:block tal:condition="python:related">
+                <div class="visualClear" id="clear-space-before-relatedItemBox"><!-- --></div>
+                <div id="relatedItemBox">
+                    <h2 i18n:translate="label_related_items">You May Also Like</h2>
+                    <ul class="visualNoMarker">
+                    <tal:related tal:repeat="item related"
+                                 tal:define="use_view_action site_properties/typesUseViewActionInListings|python:();">
+                        <li tal:define="
+                                desc                item/Description;
+                                item_type           item/portal_type;
+                                item_icon           python:plone_view.getIcon(item);
+                                item_type           item/portal_type;
+                                item_type_class     python:'contenttype-' + normalizeString(item_type);
+                                item_wf_state       item/review_state|python: getInfoFor(item, 'review_state', '');
+                                item_wf_state_class python: 'state-' + normalizeString(item_wf_state);
+                                item_url            item/absolute_url;
+                                item_url            python:test((item_type in use_view_action), item_url+'/view', item_url)">
+                            <tal:show tal:condition="python: item_type=='Show'">
+                            <tal:hideShowsWithNoUpcomingPerformances
+                                tal:condition="item/getUpcomingPerformances">
+                                <a href="#" tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);">
+                                    <img src="" alt=""
+                                         tal:condition="exists:item/image_preview"
+                                         tal:replace="structure python: path('nocall:item/tag')(scale='preview', css_class='relatedShowImage')" />
+                                </a>
+                                <div class="relatedShowText">
+                                <h2 class="tileHeadline">
+                                    <a href="#"
+                                       class="summary url"
+                                       tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);"
+                                       tal:content="item/pretty_title_or_id">
+                                        Item Title
+                                    </a>
+                                </h2>
+                                <p class="tileBody">
+                                    <span tal:omit-tag="" tal:condition="not:desc">
+                                        &nbsp;
+                                    </span>
+                                    <span class="description" tal:content="desc">
+                                        description
+                                    </span>
+                                </p>
+                                </div>
+                                <div class="visualClear"><!-- --></div>
+                            </tal:hideShowsWithNoUpcomingPerformances>
+                            </tal:show>
+                            <tal:notShow tal:condition="python: item_type!='Show'">
+                            <span tal:attributes="class item_type_class">
+                                <img tal:replace="structure item_icon/html_tag" />
+                                <a href="" class=""
+                                   tal:attributes="href  item_url;
+                                                   title item/Description;
+                                                   class string:$item_wf_state_class"
+                                   tal:content="item/pretty_title_or_id">
+                                    Related Item
+                                </a>
+                            </span>
+                            </tal:notShow>
+                        </li>
+                    </tal:related>
+                    </ul>
+                </div>
+            </tal:block>
+        </tal:relatedItems>
+    </tal:allowed>
+</div>
+</body>
+</html>
