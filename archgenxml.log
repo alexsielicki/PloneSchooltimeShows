@@ -623,7 +623,7 @@ utils      DEBUG Normalized, returning u'atdocument'.
 XMIparser  DEBUG Stereotype found: id='archgenxml_profile.xmi#7f5cf2b3-6c44-570a-856b-9a387f71ea88', name='atdocument'.
 XMIparser  DEBUG Trying to find statemachines...
 XMIparser  DEBUG Setting ownedElement to self.domElement as fallback.
-XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x4981d714>.
+XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x49850714>.
 XMIparser  DEBUG Found the following statemachines: [].
 utils      DEBUG Normalizing u'donorRenewalStartDate'.
 utils      DEBUG Normalized, returning u'donorRenewalStartDate'.
@@ -1226,7 +1226,7 @@ utils      DEBUG Normalized, returning u'atnewsitem'.
 XMIparser  DEBUG Stereotype found: id='archgenxml_profile.xmi#af0f6f8c-f813-5ff4-93af-b9ca3e7fe9aa', name='atnewsitem'.
 XMIparser  DEBUG Trying to find statemachines...
 XMIparser  DEBUG Setting ownedElement to self.domElement as fallback.
-XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x498b43b4>.
+XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x498e73b4>.
 XMIparser  DEBUG Found the following statemachines: [].
 utils      DEBUG Normalizing u'individualTixStartDate'.
 utils      DEBUG Normalized, returning u'individualTixStartDate'.
@@ -1407,7 +1407,7 @@ utils      DEBUG Normalized, returning u'atevent'.
 XMIparser  DEBUG Stereotype found: id='archgenxml_profile.xmi#6f953447-016e-5f32-8bce-0508ac83d510', name='atevent'.
 XMIparser  DEBUG Trying to find statemachines...
 XMIparser  DEBUG Setting ownedElement to self.domElement as fallback.
-XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x4990e3f4>.
+XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x499413f4>.
 XMIparser  DEBUG Found the following statemachines: [].
 utils      DEBUG Normalizing u'soldOut'.
 utils      DEBUG Normalized, returning u'soldOut'.
@@ -1586,13 +1586,13 @@ utils      DEBUG Normalized, returning u'atdocument'.
 XMIparser  DEBUG Stereotype found: id='archgenxml_profile.xmi#7f5cf2b3-6c44-570a-856b-9a387f71ea88', name='atdocument'.
 XMIparser  DEBUG Trying to find statemachines...
 XMIparser  DEBUG Setting ownedElement to self.domElement as fallback.
-XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x499592f4>.
+XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Class at -0x4998c2f4>.
 XMIparser  DEBUG Found the following statemachines: [].
 utils      DEBUG Normalizing 'Now Playing Page'.
 utils      DEBUG Normalized, returning u'Now Playing Page'.
 XMIparser  DEBUG Found the following state machines: [].
 XMIparser  DEBUG Trying to find statemachines...
-XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Namespace.ownedElement at -0x4981d774>.
+XMIparser  DEBUG We set the owned element as: <DOM Element: UML:Namespace.ownedElement at -0x49850774>.
 XMIparser  DEBUG Found the following statemachines: [].
 XMIparser  DEBUG Getting value for tag 'use_workflow' (default=). Note: we're not doing this recursively.
 XMIparser  DEBUG Returning value '',
@@ -1612,7 +1612,7 @@ utils      DEBUG Normalizing 'Now Playing Page'.
 utils      DEBUG Normalized, returning u'Now Playing Page'.
 XMIparser  DEBUG Ok, weve found an aggregation.
 XMIparser  DEBUG It's an <class 'xmiparser.xmiparser.XMIAssociation'>
-XMIparser  DEBUG Master '<DOM Element: UML:AssociationEnd at -0x49962e74>', detail '<DOM Element: UML:AssociationEnd at -0x499624b4>'.
+XMIparser  DEBUG Master '<DOM Element: UML:AssociationEnd at -0x49995e74>', detail '<DOM Element: UML:AssociationEnd at -0x499954b4>'.
 utils      DEBUG Normalizing 'Season'.
 utils      DEBUG Normalized, returning u'Season'.
 XMIparser  DEBUG In other words: Master id = '127-0-1-1-573c64c4:121842ea823:-8000:00000000000010D3', Master name = 'Season'.
@@ -1633,7 +1633,7 @@ XMIparser  DEBUG Gathering the taggedvalues for element .
 XMIparser  DEBUG Found nothing.
 XMIparser  DEBUG Ok, weve found an aggregation.
 XMIparser  DEBUG It's an <class 'xmiparser.xmiparser.XMIAssociation'>
-XMIparser  DEBUG Master '<DOM Element: UML:AssociationEnd at -0x4995e6d4>', detail '<DOM Element: UML:AssociationEnd at -0x49959cf4>'.
+XMIparser  DEBUG Master '<DOM Element: UML:AssociationEnd at -0x499916d4>', detail '<DOM Element: UML:AssociationEnd at -0x4998ccf4>'.
 utils      DEBUG Normalizing 'Show'.
 utils      DEBUG Normalized, returning u'Show'.
 XMIparser  DEBUG In other words: Master id = '127-0-1-1-573c64c4:121842ea823:-8000:00000000000010DA', Master name = 'Show'.
@@ -8240,7 +8240,7 @@ utils      DEBUG Normalized, returning u'content'.
 XMIparser  DEBUG Getting value for tag 'module' (default=). Note: we're not doing this recursively.
 XMIparser  DEBUG Returning value '',
 generator  DEBUG The class has the following methods: ['getIndividualTixStartDateOrSeasons', 'getPastPerformances', '__bobo_traverse__', 'individualTixActive', 'tag', 'getUpcomingPerformances'].
-generator  DEBUG Found the following manual methods: [<archgenxml.PyParser.PyMethod instance at 0xb6623dec>, <archgenxml.PyParser.PyMethod instance at 0xb6623aac>].
+generator  DEBUG Found the following manual methods: [<archgenxml.PyParser.PyMethod instance at 0xb65f0dec>, <archgenxml.PyParser.PyMethod instance at 0xb65f0aac>].
 XMIparser  DEBUG Getting value for tag 'hide_actions' (default=). Note: we're not doing this recursively.
 XMIparser  DEBUG Returning value '',
 XMIparser  DEBUG Looking if element has stereotype 'mixin'
@@ -15563,12 +15563,12 @@ def updateRoleMappings(context):
     wft = getToolByName(context.getSite(), 'portal_workflow')
     wft.updateRoleMappings()
 
-
 def postInstall(context):
     """Called as at the end of the setup process. """
     # the right place for your custom code
-    if isNotPloneSchooltimeShowsProfile(context): return 
+    if isNotPloneSchooltimeShowsProfile(context): return
     site = context.getSite()
+
 
 
 ##code-section FOOT
@@ -19927,4 +19927,4 @@ XMIparser  DEBUG Looking if element has stereotype ['portlet_class', 'portlet']
 utils      DEBUG Calling makeFile to create './i18n/generated.pot'.
 utils      DEBUG Making file './i18n/generated.pot' (force=1).
 utils      DEBUG Opening the file for writing and returning it.
-main       INFO  generator run took 2.55 sec.
+main       INFO  generator run took 2.51 sec.
