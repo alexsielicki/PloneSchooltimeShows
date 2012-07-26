@@ -1,0 +1,1 @@
+git does not allow empty directories, so this readme file is here to force git into creating the locales directory
