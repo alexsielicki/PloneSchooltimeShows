@@ -21,6 +21,8 @@
 
 
   <!-- ##code-section configure.zcml -->
+  <!-- Enable next/previous links for shows -->
+    <adapter factory=".nextprevious.SeasonNextPrevious" />
   <!-- ##/code-section configure.zcml -->
 
 </configure>
