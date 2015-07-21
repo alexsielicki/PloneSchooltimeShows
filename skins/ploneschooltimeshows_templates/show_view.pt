@@ -86,8 +86,14 @@
 <tal:performances tal:repeat="performance performanceColumn">
 <li tal:define="even repeat/performance/even"
     tal:attributes="class python: (even and 'row-even') or 'row-odd'">
-<tal:performance tal:define="performance performance/getObject;">
-	<span class="soldOut" tal:condition="performance/getSoldOut">Sold Out:</span>
+<tal:performance tal:define="performance performance/getObject;
+              soldOut performance/getSoldOut | nothing;
+              full performance/getFull | nothing;
+  ">
+	<span class="soldOut" tal:condition="performance/getSoldOut">Sold Out</span><span 
+     class="soldOutAndFull" tal:condition="python: soldOut and full"> & </span><span 
+     class="soldOut" tal:condition="full">Full</span><span
+     class="soldOutOrFull" tal:condition="python: soldOut or full">:</span>
 	
 	<a
 		tal:define="href show/getLink|show/getIndividualTixLink;
