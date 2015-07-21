@@ -53,6 +53,18 @@ schema = Schema((
             i18n_domain='PloneSchooltimeShows',
         ),
     ),
+
+    # Alex adding new full field here without using ArgoUML or ArchGenXML because I don't have access to it.
+    # Next time ArchGenXML is run it will strip out this new field, so it will need to be added through ArgoUML
+    # in the long run. But due to time and budget constraints, I'm just adding it here manually for now.
+    BooleanField(
+        name='full',
+        widget=BooleanField._properties['widget'](
+            label="Full",
+            description="Check this to indicate that this performance is full.",
+        ),
+    ),
+
     copied_fields['location'],
 
     copied_fields['attendees'],

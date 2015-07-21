@@ -28,6 +28,11 @@
 	Sold Out
 	</div>
 
+  <div class="full"
+       tal:condition="here/getFull|nothing">
+  Full
+  </div>
+
         <tal:disable tal:condition="nothing">
         <div class="newsImageContainer"
              tal:condition="here/getImage|nothing">

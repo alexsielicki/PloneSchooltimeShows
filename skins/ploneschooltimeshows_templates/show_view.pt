@@ -121,8 +121,15 @@
     tal:repeat="performanceColumn performanceColumns">
 <ul>
 <li tal:repeat="performance performanceColumn">
-<tal:performance tal:define="performance performance/getObject;">
-    <span class="soldOut" tal:condition="performance/getSoldOut">Sold Out:</span>
+<tal:performance 
+  tal:define="performance performance/getObject;
+              soldOut performance/getSoldOut | nothing;
+              full performance/getFull | nothing;
+  ">
+    <span class="soldOut" tal:condition="soldOut">Sold Out</span><span 
+     class="soldOutAndFull" tal:condition="python: soldOut and full"> & </span><span 
+     class="soldOut" tal:condition="full">Full</span><span
+     class="soldOutOrFull" tal:condition="python: soldOut or full">:</span>
 	
 	<span class="performanceStart" tal:define="startDate performance/start;
 	                weekday startDate/aDay;
