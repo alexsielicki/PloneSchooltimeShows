@@ -90,16 +90,12 @@
               soldOut performance/getSoldOut | nothing;
               full performance/getFull | nothing;
   ">
-	<span class="soldOut" tal:condition="performance/getSoldOut">Sold Out</span><span 
-     class="soldOutAndFull" tal:condition="python: soldOut and full"> & </span><span 
-     class="soldOut" tal:condition="full">Full</span><span
-     class="soldOutOrFull" tal:condition="python: soldOut or full">:</span>
 	
 	<a
 		tal:define="href show/getLink|show/getIndividualTixLink;
 			    href python:test(href, href, show.getIndividualTixLink());"
 		tal:attributes="href href"
-		tal:omit-tag="python: performance.getSoldOut() or not href"
+		tal:omit-tag="python: soldOut or full or not href"
 	><span class="performanceStart" 
 	    tal:define="startDate performance/start;
 	                weekday startDate/aDay;
@@ -108,6 +104,13 @@
 	    tal:content="formattedDate"
 	    >[Start Date & Time]</span>
 	</a>
+
+
+  <span class="soldOut" tal:condition="performance/getSoldOut">Sold Out</span><span 
+     class="soldOutAndFull" tal:condition="python: soldOut and full"> & </span><span 
+     class="soldOut" tal:condition="full">Full</span><!-- <span
+     class="soldOutOrFull" tal:condition="python: soldOut or full">:</span> -->
+
 </tal:performance>
 </li>
 </tal:performances>

@@ -23,7 +23,7 @@
             </metal:field>
         </h1>
 
-	<div class="soldOut"
+<!-- 	<div class="soldOut"
 	     tal:condition="here/getSoldOut|nothing">
 	Sold Out
 	</div>
@@ -31,7 +31,7 @@
   <div class="full"
        tal:condition="here/getFull|nothing">
   Full
-  </div>
+  </div> -->
 
         <tal:disable tal:condition="nothing">
         <div class="newsImageContainer"
