@@ -39,8 +39,9 @@ copied_fields['contactEmail'] = ATEventSchema['contactEmail'].copy()
 copied_fields['contactEmail'].widget.visible = 0
 copied_fields['contactPhone'] = ATEventSchema['contactPhone'].copy()
 copied_fields['contactPhone'].widget.visible = 0
-copied_fields['eventType'] = ATEventSchema['eventType'].copy()
-copied_fields['eventType'].schemata = 'categories'
+# Alex Plone 4 Upgrade: eventType is gone in Plone 4, just using subject.
+copied_fields['subject'] = ATEventSchema['subject'].copy()
+#copied_fields['eventType'].schemata = 'categories'
 schema = Schema((
 
     BooleanField(
@@ -77,7 +78,7 @@ schema = Schema((
 
     copied_fields['contactPhone'],
 
-    copied_fields['eventType'],
+    copied_fields['subject'],
 
 
 ),
